@@ -1,0 +1,18 @@
+[submodule "88credit_server"]
+	path = 88credit_server
+	url = https://github.com/nhao2003/88credit_server
+[submodule "_88credit_admin"]
+	path = _88credit_admin
+	url = https://github.com/nhao2003/_88credit_admin
+[submodule "_88credit_mobile"]
+	path = _88credit_mobile
+	url = https://github.com/nhao2003/_88credit_mobile
+[submodule "88credit_ekyc"]
+	path = 88credit_ekyc
+	url = https://github.com/nhao2003/88credit_ekyc
+[submodule "88credit_chat"]
+	path = 88credit_chat
+	url = https://github.com/nhao2003/88credit_chat
+[submodule "88credit_gateway"]
+	path = 88credit_gateway
+	url = https://github.com/nhao2003/88credit_gateway
