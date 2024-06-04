@@ -51,6 +51,15 @@ services:
     depends_on:
       rabbitmq:
         condition: service_healthy
+  88credit_chat:
+    build:
+      context: ./88credit_chat
+      dockerfile: Dockerfile
+    env_file:
+      - ./88credit_chat/.env
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
         
   nginx:
     image: nginx:latest
