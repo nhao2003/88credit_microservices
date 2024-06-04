@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  88credit_server:
+    build:
+      context: ./88credit_server
+      dockerfile: Dockerfile
+    env_file:
+      - ./88credit_server/.env
+    ports:
+      - "5555:5555"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  88credit_gateway:
+    build:
+      context: ./88credit_gateway
+      dockerfile: Dockerfile
+    env_file:
+      - ./88credit_gateway/.env
+    ports:
+      - "3000:3000"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  88credit_storage:
+    build:
+      context: ./88credit_storage
+      dockerfile: Dockerfile
+    env_file:
+      - ./88credit_storage/.env
+    depends_on:
+      rabbitmq:
+        condition: service_healthy

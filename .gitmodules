@@ -16,6 +16,6 @@
 [submodule "88credit_gateway"]
 	path = 88credit_gateway
 	url = https://github.com/nhao2003/88credit_gateway
-[submodule "88credit_media"]
-	path = 88credit_media
-	url = https://github.com/nhao2003/88credit_media
+[submodule "88credit_storage"]
+	path = 88credit_storage
+	url = https://github.com/nhao2003/88credit_storage
