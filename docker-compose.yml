@@ -52,6 +52,8 @@ services:
     depends_on:
       rabbitmq:
         condition: service_healthy
+    ports:
+      - "5000:5000"
   88credit_chat:
     build:
       context: ./88credit_chat
