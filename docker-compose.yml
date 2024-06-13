@@ -63,6 +63,8 @@ services:
     depends_on:
       rabbitmq:
         condition: service_healthy
+    ports:
+      - "1000:1000"
         
   nginx:
     image: nginx:latest
