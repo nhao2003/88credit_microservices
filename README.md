@@ -169,7 +169,7 @@ The Flutter codebase follows Clean Architecture principles, a design philosophy 
 </p>
 <p align="center">
   <img src="images/home.png" alt="Screenshot 6" width="150" style="vertical-align: top;">
-  <img src="images/Blog.png" alt="Screenshot 7" width="150" style="vertical-align: top;">
+  <img src="images/blog.png" alt="Screenshot 7" width="150" style="vertical-align: top;">
   <img src="images/baidang.png" alt="Screenshot 8" width="150" style="vertical-align: top;">
   <img src="images/chitietbaidang.png" alt="Screenshot 9" width="150" style="vertical-align: top;">
   <img src="images/profile.png" alt="Screenshot 10" width="150" style="vertical-align: top;">
