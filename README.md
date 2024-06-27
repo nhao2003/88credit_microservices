@@ -26,6 +26,7 @@
 
 To run any Android application built with Flutter you need to configure the enviroments in your machine, you can do this following the the tutorial provided by Google in [Flutter website](https://flutter.dev/docs/get-started/install)
 
+- Nodejs LTS
 - Flutter SDK
 - Android Studio (to download Android SDK)
 - Xcode (for iOS develop only)
@@ -34,14 +35,13 @@ To run any Android application built with Flutter you need to configure the envi
 
 ## Technologies
 
+- NestJs
 - Flutter
 - Clean Architecture
 - Bloc
 - API with NodeJS backend and Postgre Database
 - ZaloPay SDK
 - SocketIO
-- Chat, Video Call
-- BlockChain
 
 ## Setup
 
@@ -50,7 +50,49 @@ To run any Android application built with Flutter you need to configure the envi
 3. Run `flutter pub get` to install the required dependencies
 4. Run the project in an emulator or on a physical device
 
-# Architecture
+# Backend Architecture
+<img src="images/backend_architecture.png" alt="Backend Architecture" width="500">
+
+## Front End
+
+- React: A JavaScript framework for building user interfaces for web applications.
+- Flutter: Google's SDK for developing mobile applications for iOS and Android.
+
+## API Gateway
+
+- NestJS: A Node.js framework for building API Gateways, providing access points, and managing communication between microservices.
+- Nginx: A web server and reverse proxy to manage HTTP and HTTPS traffic.
+- Redis: An in-memory database for caching and session management.
+Message Queue
+- RabbitMQ: A message queue system for managing asynchronous communication between services.
+
+## Microservices
+
+### 88credit Service
+
+- NestJS: A Node.js framework for building the service.
+- PostgreSQL: A relational database for data storage.
+- Storage Service
+- NestJS: A Node.js framework for building the service.
+- Cloudinary: A cloud storage service for images and videos.
+
+### Ekyc Service
+
+- NestJS: A Node.js framework for building the service.
+- MongoDB: A NoSQL database for storing unstructured data.
+- VNPT EKYC: A platform providing EKYC API.
+
+## Chat Service
+
+- NestJS: A Node.js framework for building the service.
+- MongoDB: A NoSQL database for storing messages and user information.
+- Socket.IO: A JavaScript library for managing real-time communication over WebSocket.
+
+## Docker
+
+- Docker: A containerization tool for packaging and deploying services consistently and easily across different environments.
+
+# Mobile Architecture
 
 The Flutter codebase follows Clean Architecture principles, a design philosophy that emphasizes separation of concerns and maintainability.
 
