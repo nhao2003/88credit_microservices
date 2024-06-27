@@ -65,8 +65,6 @@ To run any Android application built with Flutter you need to configure the envi
 
 - NestJS: A Node.js framework for building API Gateways, providing access points, and managing communication between microservices.
 - Nginx: A web server and reverse proxy to manage HTTP and HTTPS traffic.
-- Redis: An in-memory database for caching and session management.
-Message Queue
 - RabbitMQ: A message queue system for managing asynchronous communication between services.
 
 ## Microservices
