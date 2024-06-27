@@ -2,6 +2,9 @@
 
 # 88Credit - P2P Lending App
 
+[Slide (Vietnamese)](https://uithcm-my.sharepoint.com/:p:/g/personal/21522046_ms_uit_edu_vn/EWeEMKpuLyBOkgSSEnyGDtoBqRJGXjTGJLhNBjizo0cTcQ?e=QwnroZ)
+[Document (Vietnamese)](https://uithcm-my.sharepoint.com/:b:/g/personal/21522046_ms_uit_edu_vn/EYAZQO3gg4FBjKIrmdPO5IEBN9SOr4T3EArFWiQVW4Ohfg?e=ns424A)
+
 - **Introduce the application:**
 
   - "88Credit" is a P2P Lending application that connects lenders and borrowers directly. The application is designed to be simple, easy to use, and easy to understand for users. The application is designed with the purpose of helping users to borrow money quickly and conveniently, and to help lenders find borrowers quickly and conveniently.
